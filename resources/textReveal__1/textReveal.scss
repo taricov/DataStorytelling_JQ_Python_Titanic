@@ -1,0 +1,97 @@
+$bg-black: #000000;
+$yellow: #FFCA00;
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: url(https://raw.githubusercontent.com/owlypixel/Text_reveal_animation/master/Project-snapshots/1-starter/images/rabbit_bg.png);
+    background-size: cover;
+    font: 36px/1.2 'Open Sans', sans-serif;
+}
+#app {
+    position: relative;
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        border-left: 10px solid $yellow;
+        left: 1.528em;
+        top: 50%;
+        width: 0.278em;
+        height: 60%;
+        transform: translateY(-50%) scaleY(0) ;  
+        animation: left-border-expand .8s;
+        animation-fill-mode: forwards;
+        transform-origin: 50% 50%;
+    }
+}
+.ui-slide-in {
+    width: 720px;
+    height: 126px;
+    background-color: rgba($bg-black, .6);
+    box-shadow: 0 .2em 1em rgba($bg-black, .3);
+    color: #fff;
+    padding: 20px 20px 20px 65px;
+    animation: ui-slide-in-move 1.25s;
+    animation-timing-function: cubic-bezier(.03, .98, .5, 1);
+    transform-origin: left center;
+    .text-wrapper {
+        text-transform: uppercase;
+        padding-left: 0.556em;
+        overflow: hidden;
+    }
+}
+.line {
+    opacity: 0;
+    animation: word-line-slide-out .25s forwards;
+    animation-timing-function: ease-out;
+    @for $i from 1 through 2 {
+        $time: ($i * .25) + .25;
+        &:nth-child(#{$i}n) {
+            animation-delay: #{$time}s;
+        }
+    }
+    span {
+        display: inline-block;
+        height: 43.2px;
+    }
+}
+.yellow {
+    color: $yellow;
+}
+.black {
+    font-weight: 800;
+}
+.thin {
+    font-weight: 300;
+}
+
+@keyframes ui-slide-in-move {
+    0% {transform: scaleX(0);}
+    100% {transform: scaleX(100%);}
+}
+@keyframes left-border-expand {
+    100% {transform: translateY(-50%) scaleY(1);}
+}
+@keyframes word-line-slide-out {
+    0% {
+        transform: translateX(-10vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}

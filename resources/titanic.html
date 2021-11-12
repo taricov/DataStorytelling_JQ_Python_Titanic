@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/s.css"> -->
+    <title>Document</title>
+    <!-- <style>
+        *{margin: 0;
+            padding: 0;
+        box-sizing: border-box;}
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color:#5ce1e6;
+            background: #2a244e;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        div, input{
+            margin: 10px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            text-transform: capitalize;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3em;
+            flex-direction: column;
+        }
+        input{
+            width: 500px;
+            height: 40px;
+            background-color: #5ce1e6;
+            border: none;
+            text-align: center;
+            color: #2a244e;
+            font-size: 20px;
+            transition: .4s;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        textarea:focus, textarea:hover, input:focus, input:hover{
+            outline: none;
+            box-shadow: black 2px 3px 16px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }-->
+        <style>
+
+body { 
+    background: #2d2d2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* div { margin: 20px; } */
+/* .loading { 
+  font-size: 1.5em; 
+  font-family: Georgia; 
+  color: #f0f0f0;} */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scene{
+    width: 200px;
+    height: 200px;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<!-- ==================================Loading================================ -->
+<div class="scene">
+  <svg 
+  version="1.1" 
+  id="dc-spinner" 
+  xmlns="http://www.w3.org/2000/svg" 
+  x="0px" y="0px"
+  width:"38"
+  height:"38"
+  viewBox="0 0 38 38" 
+  preserveAspectRatio="xMinYMin meet"
+  >
+  <text x="14" y="21" font-family="Monaco" font-size="2px" style="letter-spacing:0.6" fill="grey">LOADING
+     <animate 
+       attributeName="opacity"
+       values="0;1;0" dur="1.8s"
+       repeatCount="indefinite"/>
+  </text>
+  <path fill="#373a42" d="M20,35c-8.271,0-15-6.729-15-15S11.729,5,20,5s15,6.729,15,15S28.271,35,20,35z M20,5.203
+    C11.841,5.203,5.203,11.841,5.203,20c0,8.159,6.638,14.797,14.797,14.797S34.797,28.159,34.797,20
+    C34.797,11.841,28.159,5.203,20,5.203z">
+  </path>
+
+  <path fill="#373a42" d="M20,33.125c-7.237,0-13.125-5.888-13.125-13.125S12.763,6.875,20,6.875S33.125,12.763,33.125,20
+    S27.237,33.125,20,33.125z M20,7.078C12.875,7.078,7.078,12.875,7.078,20c0,7.125,5.797,12.922,12.922,12.922
+    S32.922,27.125,32.922,20C32.922,12.875,27.125,7.078,20,7.078z">
+  </path>
+
+  <path fill="#2AA198" stroke="#2AA198" stroke-width="0.6027" stroke-miterlimit="10" d="M5.203,20
+			c0-8.159,6.638-14.797,14.797-14.797V5C11.729,5,5,11.729,5,20s6.729,15,15,15v-0.203C11.841,34.797,5.203,28.159,5.203,20z">
+  <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 20 20"
+        to="360 20 20"
+        calcMode="spline"
+        keySplines="0.4, 0, 0.2, 1"
+        keyTimes="0;1"
+        dur="2s"
+        repeatCount="indefinite" />      
+   </path>
+
+  <path fill="#859900" stroke="#859900" stroke-width="0.2027" stroke-miterlimit="10" d="M7.078,20
+  c0-7.125,5.797-12.922,12.922-12.922V6.875C12.763,6.875,6.875,12.763,6.875,20S12.763,33.125,20,33.125v-0.203
+  C12.875,32.922,7.078,27.125,7.078,20z">
+   <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 20 20"
+      to="360 20 20"
+      dur="1.8s"  
+      repeatCount="indefinite" />
+    </path>
+</svg>
+</div>
+
+<!-- <div class="loading">Loading</div> -->
+<!-- =============================================================== -->
+
+
+    <!-- <section class="container">
+        <div class="a1">wanna buy your ticket Now</div>
+        <div class="a1">and see how could have you done?</div>
+        <div class="a2">enter your salary below</div>
+        <input class="a2" type="number" placeholder=" "/>
+        <div class="a3">In 1912, your salary would worth () </div>
+        <div class="a4" style="text-align:center;">Distance: Would like to pick up which point?<br>
+            <em style="font-size: 14px;">(1, 2 or 3 where 3 is nearer to destination)</em></div>
+        <input class="a2" type="number" placeholder=" "/>
+
+    </section> -->
+    </div>
+    <!-- ============================JS==================================== -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script>
+        i = 0;
+setInterval(function() {
+  i = ++i % 6;
+  $(".loading").text("Loading " + Array(i+1).join("."));
+}, 800);
+    </script> -->
+</body>
+</html>

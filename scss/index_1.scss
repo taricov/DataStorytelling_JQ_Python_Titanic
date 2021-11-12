@@ -1,0 +1,58 @@
+@import './reset';
+@import './variables';
+
+html, body{
+    background: linear-gradient(0deg, rgba(5, 0, 33, 0.7)), url('../assets/img/titanic/14.jpg');
+    background-size: cover;
+}
+
+.container{
+    margin: 150px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+
+    .main{
+        margin: 150px 0 0;
+        &__sub{
+            font-size: nth($fs, 2);
+            letter-spacing: 30px;
+            text-transform: uppercase;
+            animation: fadeIn_2 2s 3s ease-out forwards;
+            opacity: 0;
+            
+        }
+        &__title{
+            font-size: nth($fs, 2);
+            font-weight: nth($fs, 1);
+            letter-spacing: 3px;
+            // background: rgb(105, 130, 243);
+            display: inline;
+            animation: fadeIn_3 2s 2s ease-out forwards;
+            opacity: 0;
+            
+        }
+        &__content{
+            margin: 30px 0 0;
+            font-size: nth($fs, 5);
+            font-weight: nth($fw, 3);
+            text-transform: uppercase;
+            line-height: 90px;
+            div{
+                animation: fadeIn_1 2s ease-out forwards;
+                opacity: 0;
+            }
+            a{
+                padding:10px;
+                color: wheat;
+                background: linear-gradient(#104b79, #030f18);
+                border-radius: 15px;
+                animation: fadeIn_3 2s 4s ease-out forwards;
+                opacity: 0;
+
+            }
+        }
+    }
+}
