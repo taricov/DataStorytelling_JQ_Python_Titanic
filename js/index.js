@@ -1,12 +1,27 @@
 $(document).ready(function () {
 
-    // setTimeout(() => {
-    var playAudio = async () => {
-        var audioFile = await $("#joep")[0];
-        return audioFile.play();
-        // }, 1000);
+
+    const playAudio = (audio) => {
+        return new Promise(res => {
+            audio.play()
+            audio.onended = res
+        })
     }
-    playAudio()
+
+    const playIt = async () => {
+        // const audio = new Audio('<url>')
+        const audio = $("#joep")[0];
+        return await playAudio(audio)
+    }
+
+    playIt()
+
+
+    // var playAudio = async () => {
+    //     var audioFile = await $("#joep")[0];
+    //     return audioFile.play();
+    // }
+    // playAudio()
 
     var salaryAmount;
     $('#book').click(function () {
