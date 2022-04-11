@@ -4,6 +4,7 @@ $(document).ready(function () {
     const playAudio = (audio) => {
         return new Promise(res => {
             audio.play()
+            audio.loop = true;
             audio.onended = res
         })
     }
@@ -233,7 +234,7 @@ $(document).ready(function () {
                 .delay(7000)
                 .fadeOut(2000);
             $("#page_13")
-                .delay(62000)
+                .delay(65000)
                 .css('display', 'flex')
                 .hide()
                 .fadeIn(2000);

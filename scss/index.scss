@@ -400,5 +400,6 @@ img {
   #pre_page_2,
   #page_5 {
     font-size: nth($fs, 3);
+    overflow: hidden;
   }
 }
