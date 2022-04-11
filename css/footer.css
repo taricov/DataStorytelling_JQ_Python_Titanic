@@ -136,7 +136,8 @@
   text-align: center;
 }
 
-html, body {
+html,
+body {
   font-family: Arial, Helvetica, sans-serif;
   color: sandybrown;
   width: 100vw;
@@ -162,6 +163,10 @@ html, body {
 a {
   color: sandybrown;
   text-decoration: none;
+}
+
+img {
+  width: 100%;
 }
 
 /*

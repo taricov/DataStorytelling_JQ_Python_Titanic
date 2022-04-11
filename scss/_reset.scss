@@ -1,37 +1,35 @@
-@import './variables';
+@import "./variables";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-
-html,body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: $color;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1;
-    
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $color;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
 }
 
-a{
-    color: $color;
-    text-decoration: none;
+a {
+  color: $color;
+  text-decoration: none;
 }
 
-
-
-
+img {
+  width: 100%;
+}
 
 // ============= Dynamic Gradient Background ================
-
 
 /*
 .class{
