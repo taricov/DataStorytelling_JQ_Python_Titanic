@@ -267,10 +267,63 @@ body {
   background-size: cover;
 }
 
-#page_1 {
+#pop_up {
+  display: none;
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#pop_up > p:last-child {
+  font-style: italic;
+  font-size: 14px;
+}
+
+#pop_up .pop_up_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3em;
+  padding: 2em 0;
+}
+
+#pop_up .cue {
+  height: 4em;
+}
+
+#pop_up .muted {
+  height: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#page_1 {
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -798,6 +851,7 @@ img {
   #pre_page_2,
   #page_5 {
     font-size: 20px;
+    overflow: hidden;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -9,8 +9,40 @@ body {
   // transition: 2s 2s linear;
 }
 
+#pop_up {
+  display: none;
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  & > p:last-child {
+    font-style: italic;
+    font-size: 14px;
+  }
+  .pop_up_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding: 2em 0;
+  }
+  .cue {
+    height: 4em;
+  }
+  .muted {
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 #page_1 {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex: 1;

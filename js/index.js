@@ -1,30 +1,41 @@
 $(document).ready(function () {
 
-
-    const playAudio = (audio) => {
-        return new Promise(res => {
-            audio.play()
-            audio.loop = true;
-            audio.onended = res
-        })
-    }
-
-    const playIt = async () => {
-        // const audio = new Audio('<url>')
-        const audio = $("#joep")[0];
-        return await playAudio(audio)
-    }
-
-    playIt()
-
-
-    // var playAudio = async () => {
-    //     var audioFile = await $("#joep")[0];
-    //     return audioFile.play();
-    // }
-    // playAudio()
-
     var salaryAmount;
+    $("#pop_up").fadeIn(1000);
+
+
+
+    $().click(() => {
+        $("#pop_up").fadeOut();
+    });
+    $(".cue, .muted").click((e) => {
+        $("#pop_up").fadeOut();
+        $("#page_1")
+            .delay(3000)
+            .css('display', 'flex')
+            .hide()
+            .fadeIn(1000);
+
+        if ($(e.target).hasClass("cue") || $(e.target).hasClass("cc")) {
+
+            console.log("ok")
+            const playAudio = (audio) => {
+                return new Promise(res => {
+                    audio.play()
+                    audio.loop = true;
+                    audio.onended = res
+                })
+            }
+
+            const playIt = async () => {
+                const audio = $("#joep")[0];
+                return await playAudio(audio)
+            }
+
+            playIt()
+        }
+    });
+
     $('#book').click(function () {
 
         $('#page_1').fadeOut(2000);
@@ -63,9 +74,9 @@ $(document).ready(function () {
                     .removeAttr('style')
                     .css({ 'display': 'none' })
 
+                setTimeout(slider(), 15000);
             });
 
-        setTimeout("slider()", 15000);
 
         $('#page_2')
             .delay(19000)
@@ -243,7 +254,7 @@ $(document).ready(function () {
         $(".reload").click(() => {
             $("#page_13")
                 .fadeOut(2000)
-                .delay(3000)
+                .delay(5000)
 
             location.reload()
         })
@@ -301,8 +312,6 @@ $(document).ready(function () {
 
     function slider() {
         var i = setInterval(function () {
-            // var audio = new Audio("../assets/soundEffects/Transition/Sound Effect 1.wav");
-            // audio.play();
             $('#page_2 > img:first')
                 .next()
                 .fadeIn(100)
