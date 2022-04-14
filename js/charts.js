@@ -22,7 +22,7 @@ const myChart = new Chart(ctx, {
         plugins: {
             tooltip: {
                 callbacks: {
-                    label: (Item) => '%' + (Item.formattedValue * 100)
+                    label: (Item) => '%' + (Item.formattedValue * 100) + " Died"
                 }
             },
             legend: {
@@ -91,7 +91,7 @@ const myChart2 = new Chart(ctx2, {
         plugins: {
             tooltip: {
                 callbacks: {
-                    label: (Item) => '%' + (Item.formattedValue * 100)
+                    label: (Item) => '%' + (Item.formattedValue * 100) + " Survived"
                 }
             },
             legend: {
