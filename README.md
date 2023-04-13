@@ -8,7 +8,7 @@ This is a whole full experience Booking-like recommendation system to calculate 
 <br/>
 <br/>
 
-<pre>
+<div align="center">
 
 "Titanic..!"
 
@@ -34,12 +34,11 @@ After playing around with all the features I came up with the following question
 
 Not only I try to answer this question in this KaggleBook 📊 but also I've created an engaging Experience 💪 It's a Simulating Web App to **storytelling *my findings (This is my big deal*)
 
-✅ So it's Titanic like you never saw before .. Check out the NoteBook
-
-✅ You can always set yourself for a voyage and buy yourself a ticket through this Website
+✅ So it's Titanic like you never saw before .. Check out the [NoteBook](https://www.kaggle.com/code/taricov/could-a-ticket-decide-your-destiny-buy-yours-now?cellIds=4&kernelSessionId=92959887)
+✅ You can always set yourself for a voyage and buy yourself a ticket through this [Website](https://titanic-eta.vercel.app/)
 
 I'd like to ask you all for your sincere feedback/opinion on that project and if there are any suggestions to improve the User Experience that would be really appreciated ❤️
-</pre>
+</div>
 
 
 # Author
