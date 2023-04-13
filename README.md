@@ -1,34 +1,9 @@
-# DataStorytelling_JQ_Python_Titanic
-## Could a Ticket Decide Your Destiny? Buy yours Now!
-
-
 🛳 **[The lost Titanic]:** ⚓️ [Kaggle link](https://www.kaggle.com/code/taricov/could-a-ticket-decide-your-destiny-buy-yours-now) ⚓️
 
-![SCR-20230125-stj](https://user-images.githubusercontent.com/65824043/231025083-584d5600-448d-4f65-88d7-77eae3521f93.jpeg)
-
-  
-
-
-  <h1 align="center">Could a Ticket Decide Your Destiny? Buy yours Now!</h1>
+<h1 align="center">Could a Ticket Decide Your Destiny? Buy yours Now!</h1>
 <div align="center">
-A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One Place
-</p>
-
-
-This project was a 🤦 solopreneurship 🤕
-
-Here, I am exposing my whole brainstorming 🧠 process document on Notion where I tried to gather my thoughts in one place and make sense of the business need 📍 customer profiling/plan features 📂 and to document my development choices/bugs 🪲 all along the process. You can also view the [Documentation](https://splendid-glove-771.notion.site/eCalenda-6b935e025adb44c4a41cf04ec342c7e9)
-
-**This document is *NIETHER* refined nor finished** ✋ <br/> it rather acts like a closet drawer where I throw any thing in.
-<br/>
-<br/>
-<iframe src="https://www.kaggle.com/embed/taricov/could-a-ticket-decide-your-destiny-buy-yours-now?cellIds=4&kernelSessionId=92959887" height="300" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Could a Ticket Decide Your Destiny? Buy yours Now!"></iframe>
-
-✅ Go to the website [Data Experience] directly from this [link](https://titanic-eta.vercel.app/)<br/>
-✅ View a [Kaggle post:](https://www.kaggle.com/code/taricov/could-a-ticket-decide-your-destiny-buy-yours-now) 
-
-
-<br/>
+This is a whole full experience Booking-like recommendation system to calculate your survival rate based-on various factors including how much are you willing to pay for a ticket so you could then decide for yourself whether to go or not.
+</div>
 
 
 <pre>
